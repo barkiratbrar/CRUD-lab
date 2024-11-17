@@ -1,0 +1,107 @@
+:root {
+  --primary-bg-color: #4a90e2; 
+  --navbar-bg-color: #003366; 
+  --navbar-text-color: #ffffff; 
+  --button-bg-color: #e94e77; 
+  --button-text-color: #ffffff; 
+  --alert-info-bg: #d9edf7; 
+  --alert-info-text: #31708f; 
+  --alert-danger-bg: #f2dede; 
+  --alert-danger-text: #a94442; 
+  --footer-bg-color: #333333; 
+  --footer-text-color: #ffffff; 
+  --body-text-color: #333333; 
+}
+
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-bg-color);
+  color: var(--body-text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--navbar-bg-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg-color);
+  padding: 1rem;
+}
+
+.navbar a {
+  color: var(--navbar-text-color);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background-color: var(--button-bg-color);
+  color: #ffffff;
+}
+
+/* Container */
+.container {
+  padding: 2rem;
+}
+
+/* Alerts */
+.alert-info {
+  background-color: var(--alert-info-bg);
+  color: var(--alert-info-text);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.alert-danger {
+  background-color: var(--alert-danger-bg);
+  color: var(--alert-danger-text);
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Forms */
+input[type="text"], input[type="password"], input[type="email"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: var(--navbar-bg-color);
+  outline: none;
+}
+
+/* Buttons */
+.btn, .button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover, .button:hover {
+  background-color: var(--navbar-bg-color);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

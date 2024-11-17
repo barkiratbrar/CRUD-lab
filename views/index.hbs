@@ -1,0 +1,7 @@
+<h1>{{title}}</h1>
+<p>Welcome to Task Manager, a simple way to track your tasks and projects.</p>
+{{#if user}}
+  <p>Hello, {{user.username}}! <a href="/projects">View your tasks</a></p>
+{{else}}
+  <a href="/login" class="btn btn-primary">Get Started</a>
+{{/if}}

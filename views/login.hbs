@@ -1,0 +1,28 @@
+<h1 class="text-center mt-4 mb-4">Login</h1>
+
+<div class="container col-md-6 offset-md-3">
+  {{#if messages}}
+    <div class="alert alert-danger">{{messages}}</div>
+  {{else}}
+    <div class="alert alert-info">Please enter your credentials</div>
+  {{/if}}
+
+  <form method="post" class="needs-validation" novalidate>
+    <fieldset class="form-group">
+      <label for="username" class="col-2 control-label">Username: *</label>
+      <input type="text" class="form-control" name="username" id="username" required>
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="password" class="col-2 control-label">Password: *</label>
+      <input type="password" class="form-control" name="password" id="password" required>
+    </fieldset>
+    <fieldset class="form-group d-flex justify-content-between align-items-center">
+      <button type="submit" class="btn">Login</button>
+      <a class="btn btn-info" href="/google">Login with Google</a>
+    </fieldset>
+    <hr />
+    <div class="text-center">
+      Need an account? <a href="/register" title="Register">Register</a>
+    </div>
+  </form>
+</div>
